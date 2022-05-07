@@ -1,0 +1,1 @@
+# mirea-s6-spi-project
