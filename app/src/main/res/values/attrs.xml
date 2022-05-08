@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bottom_navigation_background_color" format="color" />
+    <attr name="bottom_navigation_item_color" format="color"/>
+    <attr name="edit_button_color" format="color"/>
+</resources>

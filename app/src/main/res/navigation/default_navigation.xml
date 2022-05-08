@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/default_navigation"
+    app:startDestination="@+id/fragmentAuthorization">
+    <fragment
+        android:id="@+id/fragmentAuthorization"
+        android:name="ru.mirea.kanban.fragments.FragmentAuthorization"
+        android:label="Авторизация"
+        tools:layout="@layout/fragment_authorization">
+        <argument
+            android:name="userID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentAuthorization_to_fragmentBoard"
+            app:destination="@id/fragmentBoard"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_fragmentAuthorization_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBoard"
+        android:name="ru.mirea.kanban.fragments.FragmentBoard"
+        android:label="Доска"
+        tools:layout="@layout/fragment_board">
+        <action
+            android:id="@+id/action_fragmentBoard_to_fragmentBoardAdd"
+            app:destination="@id/fragmentBoardAdd" />
+        <action
+            android:id="@+id/action_fragmentBoard_to_fragmentTask"
+            app:destination="@id/fragmentTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBoardAdd"
+        android:name="ru.mirea.kanban.fragments.FragmentBoardAdd"
+        android:label="Добавление списка"
+        tools:layout="@layout/fragment_board_add" />
+    <fragment
+        android:id="@+id/fragmentTask"
+        android:name="ru.mirea.kanban.fragments.FragmentTask"
+        android:label="Задача"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="ru.mirea.kanban.fragments.FragmentRegistration"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_fragmentRegistration_to_fragmentBoard"
+            app:destination="@id/fragmentBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="ru.mirea.kanban.fragments.FragmentSettings"
+        android:label="Настройки"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/fragmentUsers"
+        android:name="ru.mirea.kanban.fragments.FragmentUsers"
+        android:label="Пользователи"
+        tools:layout="@layout/fragment_users" />
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация" />
+
+    <EditText
+        android:id="@+id/editTextRegUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Имя пользователя" />
+
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextRegUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тип пользователя" />
+
+    <Button
+        android:id="@+id/buttonRegRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <Button
+        android:id="@+id/buttonRegAuthorize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

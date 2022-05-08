@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textSettingsUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя пользователя"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextSettingsUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSettingsUsername"
+            tools:text="{username}" />
+
+        <Button
+            android:id="@+id/buttonSettingsChangeUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изменить"
+            app:layout_constraintStart_toEndOf="@id/editTextSettingsUsername"
+            app:layout_constraintTop_toTopOf="@id/editTextSettingsUsername" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textSettingsPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пароль"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextSettingsPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSettingsPassword" />
+
+        <Button
+            android:id="@+id/buttonSettingsChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изменить"
+            app:layout_constraintStart_toEndOf="@id/editTextSettingsPassword"
+            app:layout_constraintTop_toTopOf="@id/editTextSettingsPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textSettingsRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Роль"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSettingsRoleValue"
+            tools:text="{role}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSettingsRole" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonSettingsChangeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сменить пользователя" />
+</androidx.appcompat.widget.LinearLayoutCompat>
