@@ -23,10 +23,4 @@ class FragmentTask : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_task, container, false)
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.buttonTaskBack).setOnClickListener {
-            it.findNavController().popBackStack()
-        }
-    }
 }

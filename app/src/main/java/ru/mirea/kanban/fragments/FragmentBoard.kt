@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import ru.mirea.kanban.R
 
 /**
@@ -26,5 +28,17 @@ class FragmentBoard : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         requireActivity().findViewById<BottomNavigationView>(R.id.bottom_navigation_view).visibility =
             View.VISIBLE
+
+        view.findViewById<ExtendedFloatingActionButton>(R.id.fabBoardAddList).setOnClickListener {
+            it.findNavController().navigate(
+                FragmentBoardDirections.actionFragmentBoardToFragmentBoardAdd()
+            )
+        }
+
+        view.findViewById<ExtendedFloatingActionButton>(R.id.fabBoardAddTask).setOnClickListener {
+            it.findNavController().navigate(
+                FragmentBoardDirections.actionFragmentBoardToFragmentTask()
+            )
+        }
     }
 }

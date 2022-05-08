@@ -31,14 +31,6 @@
             app:layout_constraintStart_toEndOf="@+id/textBoardName"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            app:icon="@drawable/ic_add"
-            android:id="@+id/buttonBoardAddNew"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/buttonBoardChoose"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <CheckBox
             android:id="@+id/checkBoxBoardOnlyPersonal"
             android:layout_width="wrap_content"
@@ -61,10 +53,22 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabBoardAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Задача"
+        android:layout_margin="16dp"
+        app:icon="@drawable/ic_add"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@id/fabBoardAddList"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabBoardAddList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Список"
+        android:layout_margin="16dp"
         app:icon="@drawable/ic_add"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
