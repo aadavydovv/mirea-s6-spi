@@ -1,47 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/textAuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Вход" />
+        android:padding="16dp"
+        android:text="Вход"
+        android:textAppearance="@style/TextAppearance.Kanban.Title1" />
 
-    <EditText
-        android:id="@+id/editTextAuthUsername"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutAuthUsername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutAuthPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Имя пользователя" />
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextAuthPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="288dp" />
+        <Button
+            android:id="@+id/buttonAuthAuthorize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Войти"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="353dp" />
 
-    <Button
-        android:id="@+id/buttonAuthAuthorize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Войти"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="353dp" />
+        <Button
+            android:id="@+id/buttonAuthRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Регистрация"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="413dp" />
 
-    <Button
-        android:id="@+id/buttonAuthRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Регистрация"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="413dp" />
+    </LinearLayout>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

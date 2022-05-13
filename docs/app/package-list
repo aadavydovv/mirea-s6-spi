@@ -1,14 +1,46 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:ru.mirea.kanban.fragments.board////PointingToDeclaration/app/ru.mirea.kanban.fragments.board/index.html
+$dokka.location:ru.mirea.kanban.fragments.board/FragmentBoard///PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-fragment-board/index.html
+$dokka.location:ru.mirea.kanban.fragments.board/FragmentBoard/FragmentBoard/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-fragment-board/-fragment-board.html
+$dokka.location:ru.mirea.kanban.fragments.board/FragmentBoard/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-fragment-board/on-create-view.html
+$dokka.location:ru.mirea.kanban.fragments.board/FragmentBoard/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-fragment-board/on-view-created.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskEntry///PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-entry/index.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskEntry/TaskEntry/#kotlin.Int#kotlin.String#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-entry/-task-entry.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskEntry/creatorOfTask/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-entry/creator-of-task.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskEntry/idOfTask/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-entry/id-of-task.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskEntry/nameOfTask/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-entry/name-of-task.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter.TaskEntryViewHolder///PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/-task-entry-view-holder/index.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter.TaskEntryViewHolder/TaskEntryViewHolder/#android.view.View/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/-task-entry-view-holder/-task-entry-view-holder.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter.TaskEntryViewHolder/bind/#ru.mirea.kanban.fragments.board.TaskEntry/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/-task-entry-view-holder/bind.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter///PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/index.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter/TaskListAdapter/#kotlin.collections.List[ru.mirea.kanban.fragments.board.TaskEntry]/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/-task-list-adapter.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter/getItemCount/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/get-item-count.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter/onBindViewHolder/#ru.mirea.kanban.fragments.board.TaskListAdapter.TaskEntryViewHolder#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/on-bind-view-holder.html
+$dokka.location:ru.mirea.kanban.fragments.board/TaskListAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.fragments.board/-task-list-adapter/on-create-view-holder.html
+$dokka.location:ru.mirea.kanban.fragments.users////PointingToDeclaration/app/ru.mirea.kanban.fragments.users/index.html
+$dokka.location:ru.mirea.kanban.fragments.users/FragmentUsers///PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-fragment-users/index.html
+$dokka.location:ru.mirea.kanban.fragments.users/FragmentUsers/FragmentUsers/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-fragment-users/-fragment-users.html
+$dokka.location:ru.mirea.kanban.fragments.users/FragmentUsers/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-fragment-users/on-create-view.html
+$dokka.location:ru.mirea.kanban.fragments.users/FragmentUsers/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-fragment-users/on-view-created.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserEntry///PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-entry/index.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserEntry/UserEntry/#kotlin.Int#kotlin.String#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-entry/-user-entry.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserEntry/idOfUser/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-entry/id-of-user.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserEntry/nameOfUser/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-entry/name-of-user.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserEntry/roleOfUser/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-entry/role-of-user.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter.UserEntryViewHolder///PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/-user-entry-view-holder/index.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter.UserEntryViewHolder/UserEntryViewHolder/#android.view.View/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/-user-entry-view-holder/-user-entry-view-holder.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter.UserEntryViewHolder/bind/#ru.mirea.kanban.fragments.users.UserEntry/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/-user-entry-view-holder/bind.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter///PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/index.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter/UserListAdapter/#kotlin.collections.List[ru.mirea.kanban.fragments.users.UserEntry]/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/-user-list-adapter.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter/getItemCount/#/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/get-item-count.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter/onBindViewHolder/#ru.mirea.kanban.fragments.users.UserListAdapter.UserEntryViewHolder#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/on-bind-view-holder.html
+$dokka.location:ru.mirea.kanban.fragments.users/UserListAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.fragments.users/-user-list-adapter/on-create-view-holder.html
 $dokka.location:ru.mirea.kanban.fragments////PointingToDeclaration/app/ru.mirea.kanban.fragments/index.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentAuthorization///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-authorization/index.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentAuthorization/FragmentAuthorization/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-authorization/-fragment-authorization.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentAuthorization/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-authorization/on-create-view.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentAuthorization/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-authorization/on-view-created.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentBoard///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board/index.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentBoard/FragmentBoard/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board/-fragment-board.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentBoard/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board/on-create-view.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentBoard/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board/on-view-created.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentBoardAdd///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board-add/index.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentBoardAdd/FragmentBoardAdd/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board-add/-fragment-board-add.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentBoardAdd/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-board-add/on-create-view.html
@@ -19,13 +51,10 @@ $dokka.location:ru.mirea.kanban.fragments/FragmentRegistration/onViewCreated/#an
 $dokka.location:ru.mirea.kanban.fragments/FragmentSettings///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-settings/index.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentSettings/FragmentSettings/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-settings/-fragment-settings.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentSettings/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-settings/on-create-view.html
+$dokka.location:ru.mirea.kanban.fragments/FragmentSettings/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-settings/on-view-created.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentTask///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-task/index.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentTask/FragmentTask/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-task/-fragment-task.html
 $dokka.location:ru.mirea.kanban.fragments/FragmentTask/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-task/on-create-view.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentTask/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-task/on-view-created.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentUsers///PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-users/index.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentUsers/FragmentUsers/#/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-users/-fragment-users.html
-$dokka.location:ru.mirea.kanban.fragments/FragmentUsers/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/ru.mirea.kanban.fragments/-fragment-users/on-create-view.html
 $dokka.location:ru.mirea.kanban.notifications////PointingToDeclaration/app/ru.mirea.kanban.notifications/index.html
 $dokka.location:ru.mirea.kanban.notifications/Notifications///PointingToDeclaration/app/ru.mirea.kanban.notifications/-notifications/index.html
 $dokka.location:ru.mirea.kanban.notifications/Notifications/Notifications/#android.content.Context/PointingToDeclaration/app/ru.mirea.kanban.notifications/-notifications/-notifications.html
@@ -58,19 +87,49 @@ $dokka.location:ru.mirea.kanban.room.kanbanList/EntityKanbanList/EntityKanbanLis
 $dokka.location:ru.mirea.kanban.room.kanbanList/EntityKanbanList/id/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanList/-entity-kanban-list/id.html
 $dokka.location:ru.mirea.kanban.room.kanbanList/EntityKanbanList/name/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanList/-entity-kanban-list/name.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask////PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/index.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask///PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/index.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/DBClientKanbanTask/#androidx.fragment.app.FragmentActivity/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/-d-b-client-kanban-task.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/awaitResult/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/await-result.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/delete/#ru.mirea.kanban.room.kanbanTask.EntityKanbanTask/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/delete.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/deleteByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/delete-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/findByName/#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/find-by-name.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/getAll/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/get-all.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/getByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/get-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/insertAll/#kotlin.Array[ru.mirea.kanban.room.kanbanTask.EntityKanbanTask]/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/insert-all.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/loadAllByIDs/#kotlin.IntArray/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/load-all-by-i-ds.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DBClientKanbanTask/update/#ru.mirea.kanban.room.kanbanTask.EntityKanbanTask/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-d-b-client-kanban-task/update.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask///PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/index.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/delete/#ru.mirea.kanban.room.kanbanTask.EntityKanbanTask/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/delete.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/findByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/find-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/findByName/#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/find-by-name.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/getAll/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/get-all.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/insertAll/#kotlin.Array[ru.mirea.kanban.room.kanbanTask.EntityKanbanTask]/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/insert-all.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/loadAllByIDs/#kotlin.IntArray/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/load-all-by-i-ds.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/DaoKanbanTask/update/#ru.mirea.kanban.room.kanbanTask.EntityKanbanTask/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-dao-kanban-task/update.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask///PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/index.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask/EntityKanbanTask/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/-entity-kanban-task.html
+$dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask/creator/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/creator.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask/id/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/id.html
 $dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask/name/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/name.html
-$dokka.location:ru.mirea.kanban.room.kanbanTask/EntityKanbanTask/type/#/PointingToDeclaration/app/ru.mirea.kanban.room.kanbanTask/-entity-kanban-task/type.html
 $dokka.location:ru.mirea.kanban.room.user////PointingToDeclaration/app/ru.mirea.kanban.room.user/index.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser///PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/index.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/DBClientUser/#androidx.fragment.app.FragmentActivity/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/-d-b-client-user.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/awaitResult/#/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/await-result.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/delete/#ru.mirea.kanban.room.user.EntityUser/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/delete.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/deleteByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/delete-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/findByName/#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/find-by-name.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/getAll/#/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/get-all.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/getByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/get-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/insertAll/#kotlin.Array[ru.mirea.kanban.room.user.EntityUser]/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/insert-all.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/loadAllByIDs/#kotlin.IntArray/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/load-all-by-i-ds.html
+$dokka.location:ru.mirea.kanban.room.user/DBClientUser/update/#ru.mirea.kanban.room.user.EntityUser/PointingToDeclaration/app/ru.mirea.kanban.room.user/-d-b-client-user/update.html
 $dokka.location:ru.mirea.kanban.room.user/DaoUser///PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/index.html
 $dokka.location:ru.mirea.kanban.room.user/DaoUser/delete/#ru.mirea.kanban.room.user.EntityUser/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/delete.html
+$dokka.location:ru.mirea.kanban.room.user/DaoUser/findByID/#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/find-by-i-d.html
+$dokka.location:ru.mirea.kanban.room.user/DaoUser/findByName/#kotlin.String/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/find-by-name.html
+$dokka.location:ru.mirea.kanban.room.user/DaoUser/getAll/#/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/get-all.html
 $dokka.location:ru.mirea.kanban.room.user/DaoUser/insertAll/#kotlin.Array[ru.mirea.kanban.room.user.EntityUser]/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/insert-all.html
+$dokka.location:ru.mirea.kanban.room.user/DaoUser/loadAllByIDs/#kotlin.IntArray/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/load-all-by-i-ds.html
 $dokka.location:ru.mirea.kanban.room.user/DaoUser/update/#ru.mirea.kanban.room.user.EntityUser/PointingToDeclaration/app/ru.mirea.kanban.room.user/-dao-user/update.html
 $dokka.location:ru.mirea.kanban.room.user/EntityUser///PointingToDeclaration/app/ru.mirea.kanban.room.user/-entity-user/index.html
 $dokka.location:ru.mirea.kanban.room.user/EntityUser/EntityUser/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/app/ru.mirea.kanban.room.user/-entity-user/-entity-user.html
@@ -91,6 +150,8 @@ $dokka.location:ru.mirea.kanban/MainActivity/notificationsReceiver/#/PointingToD
 $dokka.location:ru.mirea.kanban/MainActivity/onSupportNavigateUp/#/PointingToDeclaration/app/ru.mirea.kanban/-main-activity/on-support-navigate-up.html
 ru.mirea.kanban
 ru.mirea.kanban.fragments
+ru.mirea.kanban.fragments.board
+ru.mirea.kanban.fragments.users
 ru.mirea.kanban.notifications
 ru.mirea.kanban.room
 ru.mirea.kanban.room.kanbanList

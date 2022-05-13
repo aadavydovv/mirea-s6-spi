@@ -1,48 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonTaskAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textTaskName"
-            android:text="Наименование задачи"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/editTextTaskName"
-            android:layout_marginBottom="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textTaskDescription"
-            android:text="Описание задачи"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/editTextTaskDescription"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginBottom="16dp"
-            android:gravity="start|top"
-            android:inputType="textMultiLine" />
-    </LinearLayout>
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наименование задачи"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutTaskName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textTaskDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Описание задачи"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textTaskComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Комментарии"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <Button
+                android:id="@+id/buttonTaskCommentsCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Создать" />
+
+            <Button
+                android:id="@+id/buttonTaskCommentsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Просмотреть" />
+
+            <TextView
+                android:id="@+id/textTaskFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Файлы"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <Button
+                android:id="@+id/buttonTaskFilesCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавить" />
+
+            <Button
+                android:id="@+id/buttonTaskFilesView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Просмотреть" />
+
+            <TextView
+                android:id="@+id/textTaskPlanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Планирование"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <Button
+                android:id="@+id/buttonTaskPlanningNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Создать напоминание" />
+
+            <Button
+                android:id="@+id/buttonTaskPlanningDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Установить срок выполнения" />
+
+            <TextView
+                android:id="@+id/textTaskUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Пользователи"
+                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+            <Button
+                android:id="@+id/buttonTaskUsersPermit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Назначить задачу" />
+
+            <Button
+                android:id="@+id/buttonTaskUsersAssign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Оповестить о задаче" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/buttonTaskAdd"

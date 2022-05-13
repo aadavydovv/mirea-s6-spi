@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentBoard"
-        android:name="ru.mirea.kanban.fragments.FragmentBoard"
+        android:name="ru.mirea.kanban.fragments.board.FragmentBoard"
         android:label="Доска"
         tools:layout="@layout/fragment_board">
         <action
@@ -44,7 +44,8 @@
         android:id="@+id/fragmentTask"
         android:name="ru.mirea.kanban.fragments.FragmentTask"
         android:label="Задача"
-        tools:layout="@layout/fragment_task" />
+        tools:layout="@layout/fragment_task" >
+    </fragment>
     <fragment
         android:id="@+id/fragmentRegistration"
         android:name="ru.mirea.kanban.fragments.FragmentRegistration"
@@ -61,7 +62,7 @@
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/fragmentUsers"
-        android:name="ru.mirea.kanban.fragments.FragmentUsers"
+        android:name="ru.mirea.kanban.fragments.users.FragmentUsers"
         android:label="Пользователи"
         tools:layout="@layout/fragment_users" />
 </navigation>

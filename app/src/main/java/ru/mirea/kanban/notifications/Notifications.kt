@@ -7,8 +7,20 @@ import android.content.Intent
 import java.util.*
 import kotlin.random.Random
 
+/**
+ * Класс "уведомления".
+ * Создаваемый объект осуществляет отправку уведомлений в заданное время.
+ */
 class Notifications(private val context: Context) {
 
+    /**
+     * Метод отправки уведомления.
+     *
+     * @param title заголовок уведомления.
+     * @param text текст уведомления.
+     * @param hour час отправки уведомления.
+     * @param minute минута отправки уведомления.
+     */
     fun sendNotification(title: String, text: String, hour: Int, minute: Int) {
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 

@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         navView.visibility = View.GONE
+        supportActionBar?.hide()
     }
 
     /**

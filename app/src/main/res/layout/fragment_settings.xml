@@ -2,9 +2,11 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,30 +17,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Имя пользователя"
+            android:textAppearance="@style/TextAppearance.Kanban.Title1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextSettingsUsername"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutSettingsUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@id/buttonSettingsChangeUsername"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textSettingsUsername"
-            tools:text="{username}" />
+            app:layout_constraintTop_toBottomOf="@id/textSettingsUsername">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/buttonSettingsChangeUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="Изменить"
-            app:layout_constraintStart_toEndOf="@id/editTextSettingsUsername"
-            app:layout_constraintTop_toTopOf="@id/editTextSettingsUsername" />
+            android:layout_marginTop="8dp"
+            android:paddingVertical="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/textInputLayoutSettingsUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textInputLayoutSettingsUsername"
+            app:layout_constraintTop_toTopOf="@id/textInputLayoutSettingsUsername" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -46,30 +60,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Пароль"
+            android:textAppearance="@style/TextAppearance.Kanban.Title1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextSettingsPassword"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutSettingsPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
+            app:layout_constraintEnd_toStartOf="@id/buttonSettingsChangePassword"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textSettingsPassword" />
+            app:layout_constraintTop_toBottomOf="@id/textSettingsPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextSettingsPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/buttonSettingsChangePassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="Изменить"
-            app:layout_constraintStart_toEndOf="@id/editTextSettingsPassword"
-            app:layout_constraintTop_toTopOf="@id/editTextSettingsPassword" />
-
+            android:layout_marginTop="8dp"
+            android:paddingVertical="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/textInputLayoutSettingsPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textInputLayoutSettingsPassword"
+            app:layout_constraintTop_toTopOf="@id/textInputLayoutSettingsPassword" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -77,20 +105,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Роль"
+            android:textAppearance="@style/TextAppearance.Kanban.Title1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textSettingsRoleValue"
-            tools:text="{role}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Kanban.Title3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textSettingsRole" />
+            app:layout_constraintTop_toBottomOf="@id/textSettingsRole"
+            tools:text="{role}" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:layout_marginTop="16dp"
         android:id="@+id/buttonSettingsChangeUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

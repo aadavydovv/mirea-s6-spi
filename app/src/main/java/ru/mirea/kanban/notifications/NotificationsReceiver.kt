@@ -8,6 +8,10 @@ import androidx.core.app.NotificationManagerCompat
 import ru.mirea.kanban.R
 import kotlin.random.Random
 
+/**
+ * Класс "получателя уведомлений".
+ * Создаваемый объект осуществляет функцию вывода уведомлений на экран при получении таковых.
+ */
 class NotificationsReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {

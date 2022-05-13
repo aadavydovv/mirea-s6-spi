@@ -85,5 +85,5 @@ dependencies {
 }
 
 tasks.dokkaHtml.configure {
-    outputDirectory.set(new File(buildDir.absolutePath, "../docs"))
+    outputDirectory.set(new File(buildDir.absolutePath, "../../docs"))
 }
