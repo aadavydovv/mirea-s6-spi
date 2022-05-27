@@ -1,155 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent" >
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/buttonTaskAdd"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewTaskButtons"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Наименование задачи"
+            android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textTaskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Описание задачи"
+            android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskDescription"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/buttonTaskAdd"
+            android:text="Добавить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <LinearLayout
+            android:gravity="center"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/layoutTaskOptions"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textTaskName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Наименование задачи"
-                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutTaskName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/textTaskDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Описание задачи"
-                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/outlinedTextField"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textMultiLine" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/textTaskComments"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Комментарии"
+                android:text="Метаданные"
+                android:paddingBottom="4dp"
                 android:textAppearance="@style/TextAppearance.Kanban.Title1" />
 
             <Button
-                android:id="@+id/buttonTaskCommentsCreate"
+                android:id="@+id/buttonTaskChangeList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Создать" />
+                android:text="Изменить список" />
 
             <Button
                 android:id="@+id/buttonTaskCommentsView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Просмотреть" />
-
-            <TextView
-                android:id="@+id/textTaskFiles"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Файлы"
-                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
-
-            <Button
-                android:id="@+id/buttonTaskFilesCreate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Добавить" />
+                android:text="Комментарии" />
 
             <Button
                 android:id="@+id/buttonTaskFilesView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Просмотреть" />
-
-            <TextView
-                android:id="@+id/textTaskPlanning"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Планирование"
-                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
-
-            <Button
-                android:id="@+id/buttonTaskPlanningNotification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Создать напоминание" />
+                android:text="Файлы" />
 
             <Button
                 android:id="@+id/buttonTaskPlanningDeadline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Установить срок выполнения" />
-
-            <TextView
-                android:id="@+id/textTaskUsers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Пользователи"
-                android:textAppearance="@style/TextAppearance.Kanban.Title1" />
+                android:text="Срок выполнения" />
 
             <Button
-                android:id="@+id/buttonTaskUsersPermit"
+                android:id="@+id/buttonTaskAssign"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Назначить задачу" />
-
-            <Button
-                android:id="@+id/buttonTaskUsersAssign"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Оповестить о задаче" />
+                android:text="Назначить сотруднику" />
 
         </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonTaskAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Добавить"
+    <FrameLayout
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/viewTaskButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/layoutTaskEndButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                app:backgroundTint="@color/red"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/buttonTaskEnd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Завершить" />
+
+            <Button
+                app:backgroundTint="@color/red"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:id="@+id/buttonTaskEndNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Завершить\nс оповещением" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

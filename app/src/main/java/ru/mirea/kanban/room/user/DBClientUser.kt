@@ -1,5 +1,6 @@
 package ru.mirea.kanban.room.user
 
+import android.util.Log
 import androidx.fragment.app.FragmentActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -25,10 +26,17 @@ class DBClientUser(mainActivity: FragmentActivity) {
      * @return результат запроса.
      */
     fun awaitResult(): Any? {
+        var counter = 0
         while (result == null) {
             sleep(16)
-            // TODO: awful
+            counter += 1
+
+            if (counter > 187) {
+                Log.d("oof", "counter error: task")
+                break
+            }
         }
+
         val tempResult = result
         result = null
         return tempResult

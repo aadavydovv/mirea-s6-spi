@@ -3,9 +3,9 @@
     <color name="primaryColor">#58bdc4</color>
     <color name="primaryLightColor">#8df0f7</color>
     <color name="primaryDarkColor">#178d94</color>
-    <color name="secondaryColor">#d69a99</color>
-    <color name="secondaryLightColor">#ffcbca</color>
-    <color name="secondaryDarkColor">#a36b6b</color>
+    <color name="secondaryColor">#58bdc4</color>
+    <color name="secondaryLightColor">#8df0f7</color>
+    <color name="secondaryDarkColor">#178d94</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
     <color name="warning">#c73d35</color>
@@ -17,4 +17,5 @@
     <color name="gray_600">#757575</color>
     <color name="gray_800">#424242</color>
     <color name="gray_900">#212121</color>
+    <color name="red">#d69a99</color>
 </resources>

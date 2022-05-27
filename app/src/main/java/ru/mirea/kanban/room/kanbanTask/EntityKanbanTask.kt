@@ -15,6 +15,10 @@ import androidx.room.PrimaryKey
 data class EntityKanbanTask(
     @ColumnInfo(name = "name") var name: String,
     @ColumnInfo(name = "creator") var creator: String,
+    @ColumnInfo(name = "listID") var listID: Int,
+    @ColumnInfo(name = "description") var description: String = "",
+    @ColumnInfo(name = "deadline") var deadline: String = "",
+    @ColumnInfo(name = "workerID") var workerID: Int = -1,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 )
 

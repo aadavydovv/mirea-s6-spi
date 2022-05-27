@@ -121,6 +121,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        app:backgroundTint="@color/red"
         android:layout_marginTop="16dp"
         android:id="@+id/buttonSettingsChangeUser"
         android:layout_width="wrap_content"

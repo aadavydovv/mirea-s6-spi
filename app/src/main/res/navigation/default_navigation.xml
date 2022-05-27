@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_fragmentBoard_to_fragmentTask"
             app:destination="@id/fragmentTask" />
+        <action
+            android:id="@+id/action_fragmentBoard_to_fragmentListSelect"
+            app:destination="@id/fragmentListSelect" />
     </fragment>
     <fragment
         android:id="@+id/fragmentBoardAdd"
@@ -45,6 +48,22 @@
         android:name="ru.mirea.kanban.fragments.FragmentTask"
         android:label="Задача"
         tools:layout="@layout/fragment_task" >
+        <argument
+            android:name="taskID"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_fragmentTask_to_fragmentUsers"
+            app:destination="@id/fragmentUsers" />
+        <action
+            android:id="@+id/action_fragmentTask_to_fragmentCommentList"
+            app:destination="@id/fragmentCommentList" />
+        <action
+            android:id="@+id/action_fragmentTask_to_fragmentFiles"
+            app:destination="@id/fragmentFiles" />
+        <action
+            android:id="@+id/action_fragmentTask_to_fragmentListSelect"
+            app:destination="@id/fragmentListSelect" />
     </fragment>
     <fragment
         android:id="@+id/fragmentRegistration"
@@ -64,5 +83,38 @@
         android:id="@+id/fragmentUsers"
         android:name="ru.mirea.kanban.fragments.users.FragmentUsers"
         android:label="Пользователи"
-        tools:layout="@layout/fragment_users" />
+        tools:layout="@layout/fragment_users" >
+        <argument
+            android:name="taskID"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentListSelect"
+        android:name="ru.mirea.kanban.fragments.lists.FragmentListSelect"
+        tools:layout="@layout/fragment_list_select"
+        android:label="Выбор списка" >
+        <argument
+            android:name="taskID"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_comment_list"
+        android:id="@+id/fragmentCommentList"
+        android:name="ru.mirea.kanban.fragments.comments.FragmentCommentList"
+        android:label="Комментарии" >
+        <argument
+            android:name="taskID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_files"
+        android:id="@+id/fragmentFiles"
+        android:name="ru.mirea.kanban.fragments.files.FragmentFiles"
+        android:label="Файлы" >
+        <argument
+            android:name="taskID"
+            app:argType="integer" />
+    </fragment>
 </navigation>

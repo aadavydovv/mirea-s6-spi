@@ -20,12 +20,64 @@
             android:textAppearance="@style/TextAppearance.Kanban.Title2"
             tools:text="{task_name}" />
 
-        <TextView
-            android:id="@+id/textViewTaskCreator"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.Kanban.Title3"
-            tools:text="{creator}" />
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="создатель: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewTaskCreator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Kanban.Title3"
+                tools:text="{creator}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTaskAssigned"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="назначено: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewTaskAssigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Kanban.Title3"
+                tools:text="{deadline}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTaskDeadline"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="дедлайн: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewTaskDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Kanban.Title3"
+                tools:text="{deadline}" />
+
+        </LinearLayout>
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

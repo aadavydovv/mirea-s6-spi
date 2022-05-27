@@ -14,7 +14,9 @@ import androidx.room.PrimaryKey
 @Entity
 data class EntityUser(
     @ColumnInfo(name = "name") var name: String,
+    @ColumnInfo(name = "role") var role: String,
     @ColumnInfo(name = "password") var password: String,
+    @ColumnInfo(name = "notifyTaskID") var notifyTaskID: Int = -1,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 )
 

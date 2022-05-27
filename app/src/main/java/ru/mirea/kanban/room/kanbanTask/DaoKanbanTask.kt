@@ -8,6 +8,10 @@ import androidx.room.*
  */
 @Dao
 interface DaoKanbanTask {
+
+    @Query("SELECT * FROM EntityKanbanTask WHERE listID like :listID")
+    fun getByListID(listID: Int): List<EntityKanbanTask>
+
     /**
      * Метод получения всех задач.
      */
